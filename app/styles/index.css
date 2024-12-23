@@ -1,0 +1,15 @@
+ 
+@import './basics.css';  
+@import '@/app/components/footer/style.css';
+@import '@/app/components/gallery/style.css';
+@import '@/app/components/header/style.css';
+@import './path.css';
+@import './Home.css';
+
+ 
+@import '@/app/pages/about/style.css';
+@import '@/app/pages/contact/style.css';
+@import '@/app/pages/post/style.css';
+@import '@/app/pages/blog/style.css';
+@import '@/app/pages/project/style.css';
+@import '@/app/pages/projects/style.css'; 

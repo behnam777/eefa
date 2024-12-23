@@ -1,0 +1,11 @@
+body {
+  width: 100%;
+  margin: 0px;
+  position: relative;
+  font-family: "Urbanist", serif !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none !important;
+}

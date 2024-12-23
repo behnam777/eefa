@@ -1,0 +1,232 @@
+footer {
+    position: relative;
+    width: 82%;
+    height: 20vh;
+    bottom: 0;
+    float: left;
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+.footer-up-side {
+    position: absolute;
+    width: 82%;
+    border-top: 1px solid rgba(128, 128, 128, 0.573);
+    top: 0;
+    height: 2px;
+    cursor: pointer;
+}
+
+.left-side {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    float: left;
+}
+
+.footer-logo {
+    margin-top: 2.31rem;
+    float: left;
+    width: 30%;
+    display: block;
+    height: 63px;
+}
+
+.footer-menu {
+    float: left;
+    width: 30%;
+    display: flex;
+    height: 30%;
+    gap: 6%;
+    flex-direction: row;
+}
+
+.footer-menu-item {
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+}
+
+.right-side {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    flex-direction: column;
+    float: right;
+    position: relative;
+}
+
+.right-side-level-1 {
+    margin-top: calc(30px + 2.31rem);
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+}
+
+.right-side-level-2 {
+    margin-top: 6px;
+    width: 50%;
+    float: right;
+    margin-left: auto;
+    margin-top: 15px;
+}
+
+.footer-social {
+    display: flex;
+    margin-top: auto;
+    justify-content: space-between;
+    gap: 20%;
+}
+
+.footer-toup {
+    display: flex;
+    margin-top: auto;
+    cursor: pointer;
+}
+
+.footer-social-linkedin {
+    float: left;
+    width: 33px;
+    height: 33px;
+    cursor: pointer;
+}
+
+.footer-social-instagram {
+    float: left;
+    width: 33px;
+    height: 33px;
+    cursor: pointer;
+}
+
+.footer-toup-title {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 0.3rem;
+    color: var(--Text-Greyscale-900, #212121);
+
+}
+
+.footer-toup-icon {
+    margin-bottom: 0.2rem;
+}
+
+.footer-copyright {
+    color: var(--Text-Greyscale-600, #757575);
+    padding-left: 2px;
+}
+.right-side-phone{
+    display: none;
+}
+.footer-toup-phone{
+    display: none;
+}
+/*-----------------------------------------------------------------------*/
+
+@media only screen and (max-width: 600px) {
+    footer{
+        margin-top: 5%;
+        padding-left: 4%;
+        padding-right: 4%;
+        width: 92%;
+
+    } 
+    .footer-up-side{
+        width: 92%;
+    }
+    .footer-toup-title-phone{
+        float: left;
+        position: relative;
+        margin-top: 3px;
+        margin-right: 2%;
+        font-size: 14px;
+        margin-right: 9%;
+    }
+    .footer-toup-icon-phone{
+        position: absolute;
+    }
+    .right-side-phone{
+        display: block;
+    }
+    .footer-toup-phone {
+        display: block;
+        width: 30%;
+        position: absolute;
+        right: 0;
+        top: 30%;
+        right: 4px;
+    }
+    .left-side {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        float: left;
+        position: relative;
+        /* background-color: red; */
+        border-bottom: 1px solid rgba(128, 128, 128, 0.573);
+        padding-bottom: 4%;
+    }
+
+    .footer-logo {
+        margin-top: 2.31rem;
+        float: left;
+        width: 31%;
+        display: block;
+        height: 63px;
+        position: relative;
+        float: left; 
+    }
+
+    .footer-menu {
+        float: left;
+        width: 100%;
+        display: flex;
+        height: 30%;
+        gap: 5%;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 3%;
+        color: #424242;
+    } 
+
+    .right-side {
+        display: none;
+    } 
+
+    .right-side-level-2 {
+        display: none;
+    } 
+    .right-side-phone{
+        margin-top: 6px;
+        width: 100%;
+        float: left;
+        margin-left: none !important;
+        margin-top: 15px;
+
+    }
+    .footer-toup {
+        display: none;
+    } 
+    .right-side-level-1 {
+        height: 8vh;
+        width: 100%;
+        position: relative;
+        float: left;
+        display: flow;
+        justify-content: space-between;
+    }
+    .right-side-phone{
+        color: var(--Text-Greyscale-600, #757575);
+        padding-bottom: 3%;
+    }
+    .right-side-level-1-phone{
+        padding: 2% 2% 2% 0px;
+    }
+    .footer-social-phone{
+        display: flex;
+        gap: 5%;
+        padding-bottom: 4%;
+    }
+}

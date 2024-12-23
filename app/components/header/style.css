@@ -1,0 +1,225 @@
+ .header {
+     position: relative;
+     float: left;
+     width: 100%;
+     display: flex;
+     height: 25vh;
+     flex-direction: column;
+     padding-bottom: 2%;
+ }
+
+ .header-logo {
+     position: relative;
+     width: 15%;
+     margin-top: 2.8%;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ .header-menu {
+     float: left;
+     width: auto;
+     margin-left: auto;
+     margin-right: auto;
+     display: flex;
+     justify-content: center;
+     margin-top: 1.7%;
+     color: var(--Text-Greyscale-600, #757575);
+     font-family: Urbanist;
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 500;
+ }
+
+ .header-menu-item {
+     border-right: 1px solid rgba(128, 128, 128, 0.263);
+     padding: 0px 10%;
+     cursor: pointer;
+     transition: all 0.5s;
+     animation-iteration-count: 1;
+     height: 18px;
+ }
+
+ .header-menu-item:last-child {
+     border-right: 0px solid rgba(128, 128, 128, 0.263);
+ }
+
+ .header-menu-item:hover {
+     color: var(--Text-General-Text-Light, #212121);
+ }
+
+ .header-menu-item:active {
+     color: var(--Text-General-Text-Light, #212121);
+     animation: fading1 0.5s
+ }
+
+ .header-menu-item-selected {
+     color: #212121;
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 600; 
+ }
+
+ @keyframes fading1 {
+     0% {
+         opacity: 0
+     }
+
+     100% {
+         opacity: 1
+     }
+ }
+
+ .main-page-header-phone {
+     display: none;
+     transition: all 0.2s;
+ }
+
+ @media only screen and (max-width: 600px) {
+
+     .header {
+         height: 10vh !important;
+     }
+
+     .header-logo {
+         display: none !important;
+         width: 0x !important;
+         height: 0x !important;
+     }
+
+     .header-menu {
+         display: none !important;
+         width: 0x !important;
+         height: 0x !important;
+     }
+
+     .main-page-header-phone {
+         width: 100%;
+         height: 7.5vh !important;
+         position: fixed;
+         top: 0;
+         left: 0;
+         z-index: 10;
+         display: block !important;
+         background-color: rgb(255, 255, 255);
+     }
+
+     .main-page-header-logo-phone {
+         width: 20%;
+         float: left;
+         position: relative;
+         margin: 5%;
+     }
+
+     .main-page-header-icon-phone {
+         width: 10%;
+         float: right;
+         position: relative;
+         margin: 5%;
+     }
+
+     .main-page-header-icon-phone:hover {
+         scale: 1.2;
+     }
+
+     .main-page-header-menu-phone {
+         position: relative;
+         width: 100%;
+         z-index: 11;
+         background-color: #FFFFFF;
+         height: 0vh;
+         overflow: hidden;
+         transition: all 0.5s;
+     }
+
+     .main-page-header-menu-logo-phone {
+         width: 20%;
+         left: 0px;
+         position: absolute;
+         margin: 5%;
+     }
+
+     .main-page-header-menu-icon-phone {
+         width: 7%;
+         right: 0px;
+         position: absolute;
+         margin: 7% 6%;
+     }
+
+     .main-page-header-menu-item-phone-container {
+         width: 100%;
+         height: 100vh;
+         position: absolute;
+         bottom: 0;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         gap: 3%;
+         text-align: center;
+         color: #9E9E9E;
+     }
+
+     .main-page-header-menu-phone-container {
+         width: 100%;
+         position: absolute;
+         float: left;
+         height: 10vh;
+         top: 0;
+         z-index: 12;
+     }
+
+     .main-page-header-menu-item-phone {
+         color: var(--Text-Greyscale-600, #757575);
+         text-align: center;
+         font-family: Urbanist;
+         font-size: 20px;
+         font-style: normal;
+         font-weight: 500;
+         line-height: 160%;
+         /* 32px */
+     }
+
+     .main-page-header-menu-item-phone:hover {
+         color: var(--Text-General-Text-Light, #212121);
+         text-align: center;
+         font-family: Urbanist;
+         font-size: 20px;
+         font-style: normal;
+         font-weight: 600;
+         line-height: 160%;
+         /* 32px */
+     }
+
+     .phone-menu-open {
+         height: 100vh;
+         overflow: visible;
+     }
+
+     .main-page-header-menu-icon-phone:hover {
+         scale: 1.2;
+     }
+
+     .header-social-phone {
+
+         display: flex;
+         margin-top: auto;
+         justify-content: space-between;
+         gap: 20%;
+         position: absolute;
+         bottom: 10%;
+         margin-left: 40%;
+
+     }
+
+     .header-social-linkedin-phone {
+         float: left;
+         width: 33px;
+         height: 33px;
+     }
+
+     .header-social-instagram-phone {
+         float: left;
+         width: 33px;
+         height: 33px;
+     }
+ }

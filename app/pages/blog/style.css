@@ -1,0 +1,157 @@
+ /*-------------------------------------------------------*/
+ .blog-posts {
+     padding-left: 9%;
+     padding-right: 9%;
+     margin-top: 3%;
+     height: 100vh;
+ }
+
+ .post-cart {
+     float: left;
+     margin: 0px 1% 1% 0px;
+     width: 45%;
+     aspect-ratio: 2/1;
+     border-radius: 6px;
+     border: 1px solid var(--Stroke-Greyscale-Greyscale-200, #EEE);
+     padding: 1.5%;
+     position: relative;
+ }
+
+ .post-cart:nth-child(2n) {
+     margin-left: 1% !important;
+     float: right;
+ }
+
+ .post-cart-image {
+     width: 100%;
+     height: 90%;
+     object-fit: cover;
+     border-radius: 6px;
+     transition: all 0.3s;
+     cursor: pointer;
+ }
+
+ .post-cart-image:hover {
+     rotate: 0.6deg;
+     opacity: 0.9;
+ }
+
+ .post-cart-title {
+     color: var(--Text-Greyscale-900, #212121);
+     /* Urbanist/Large/semibold */
+     font-family: Urbanist;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: 160%;
+     /* 25.6px */
+     letter-spacing: 0.2px;
+     margin-top: 2%;
+ }
+
+ .post-cart-summary {
+     color: var(--Text-Greyscale-600, #757575);
+     /* Urbanist/Medium/regular */
+     font-family: Urbanist;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 160%;
+     /* 22.4px */
+     letter-spacing: 0.2px;
+     text-align: justify;
+     margin-top: 6px;
+ }
+
+
+ .post-card-readmore {
+     /* position: absolute; */
+     z-index: 3;
+     cursor: pointer;
+     text-align: left;
+     /* bottom: 5%; */
+     font-weight: 600;
+     font-size: 12px;
+     letter-spacing: 0.01088rem;
+     /* bottom: 0px; */ 
+     position: relative;
+     float: left; 
+     padding-top: 1.5%;
+     padding-bottom: 0px; 
+     margin-top: 2%;
+ }
+
+ .post-card-readmore-title {
+     opacity: 1;
+     color: var(--Text-Greyscale-900, #212121);
+     /* Urbanist/Medium/semibold */
+     font-family: Urbanist;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: 160%;
+     /* 22.4px */
+     letter-spacing: 0.2px;
+ }
+
+ .post-card-readmore-undeline {
+     border-bottom: 3px solid black;
+     margin-top: 6%;
+     width: 0%;
+     transition: all 0.4s;
+ }
+
+ .post-card-readmore:hover>.post-card-readmore-undeline {
+     width: 54%;
+ }
+
+ /*-----------------------------------------------------------------------*/
+ @media only screen and (max-width: 600px) {
+    
+     .blog-posts {
+         padding-left: 6%;
+         padding-right: 6%;
+         margin-top: 3%;
+     }
+
+     .post-cart {
+         float: left;
+         margin: 0px;
+         width: 89%;
+         aspect-ratio: 1 / 1.4;
+         border-radius: 2px;
+         border: 1px solid var(--Stroke-Greyscale-Greyscale-200, #EEE);
+         padding: 6%;
+         position: relative;
+         margin-bottom: 7%;
+     }
+
+     .post-cart-image {
+         object-fit: fill;
+         border-radius: 2px;
+     }
+
+     .post-cart-summary {
+         text-align: left;
+         margin-top: 4%;
+     }
+
+     .post-cart-title {
+         margin-top: 6%;
+     }
+
+     .post-card-readmore {
+         position: relative;
+         z-index: 3;
+         cursor: pointer;
+         text-align: left;
+         /* bottom: 5%; */
+         font-weight: 600;
+         font-size: 12px;
+         letter-spacing: 0.01088rem;
+         bottom: 0px;
+         height: 10%;
+         margin-top: 7%;
+         width: 30%;
+     }
+ }

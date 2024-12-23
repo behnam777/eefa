@@ -1,0 +1,301 @@
+.main-page-gallery > .main-page-header-phone{
+    background-color: transparent !important; 
+}
+/* انیمیشن حلقه */
+@keyframes draw {
+    0% {
+        stroke-dasharray: 87; /* محیط حلقه */
+        stroke-dashoffset: 87; /* شروع از نقطه صفر */
+        transform: rotate(-90deg); /* چرخش به 90- درجه برای شروع از بالا */
+    }
+    100% {
+        transform: rotate(-90deg);
+        stroke-dashoffset: 0; /* کامل شدن حلقه */
+    }
+}
+.main-gaallery-buttons-container{
+    width: 40%;
+    position: absolute;
+    padding: 4px 8px;
+    background-color: #1817171b;
+    bottom: 2%;
+    left: 30%;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+} 
+.circle-animation {
+    display: none;
+    animation: draw 10s linear forwards; /* انیمیشن 10 ثانیه‌ای */
+    transform-origin: 50% 50%; /* مرکز دایره */
+}
+.main-gaallery {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; 
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    background-color: #181717;
+}
+
+.main-gaallery-img {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+} 
+@keyframes fadeInAnimation {0% {opacity: 0;}100% {opacity: 1;}}
+.main-gaallery-gradiant-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25vh;
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(180deg, rgba(0, 0, 0, 0.7231267507002801) 6%, rgba(0, 212, 255, 0) 74%);
+    background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.7231267507002801) 6%, rgba(0, 212, 255, 0) 74%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7231267507002801) 6%, rgba(0, 212, 255, 0) 74%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#00d4ff", GradientType=1);
+}
+
+.main-gaallery-gradiant-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25vh;
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.7231267507002801) 6%, rgba(0, 212, 255, 0) 74%);
+    background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.7231267507002801) 6%, rgba(0, 212, 255, 0) 74%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7231267507002801) 6%, rgba(0, 212, 255, 0) 74%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#00d4ff", GradientType=1);
+}
+
+.main-gaallery-arrow-left {
+    position: absolute;
+    z-index: 3;
+    padding: 3% 3%;
+    margin-top: 43vh;
+}
+
+.main-gaallery-arrow-right {
+    position: absolute;
+    z-index: 3;
+    padding: 3% 3%;
+    right: 0;
+    margin-top: 43vh;
+}
+
+.main-gaallery-arrow-left-img {
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.main-gaallery-arrow-right-img {
+    rotate: 180deg;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.arrow-container {
+    background-color: #FFFFFF73;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.arrow-container:hover {
+    background-color: #ffffffe4;
+}
+
+.arrow-container:hover>.main-gaallery-arrow {
+    filter: invert(100%);
+}
+
+.main-gaallery-arrow {
+    scale: 0.7;
+}
+
+.main-gaallery-note {
+    position: absolute;
+    bottom: 10%;
+    width: 22%;
+    z-index: 5;
+    left: 3%;
+    color: white;
+}
+
+.main-gaallery-note-title {
+    color: var(--Text-General-White, #FFF);
+    font-family: Urbanist;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    margin: 1% 0px;
+}
+
+.main-gaallery-note-status {
+    color: #FFF;
+    text-align: justify;
+    font-family: Urbanist;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+}
+
+ 
+@media only screen and (max-width: 600px) {
+    
+    .main-page-header-menu {
+        display: none ;
+    }
+
+    .main-gaallery-note {
+        width: 92% !important;
+    }
+
+    .arrow-container {
+        display: none !important;
+    }
+
+    .main-page-header {
+        display: none !important;
+    }
+    
+}
+/*----------------------------------------------------------------------------------*/
+.main-gaallery-buttons{
+    width: 50%;
+    background-color: red;
+    position: absolute; 
+    display: flex;
+    bottom: 2%;
+    margin-left: 24%; 
+    justify-content: center;
+    height: 40px;
+
+}
+.circleContainer {
+    position: relative;  
+    background-color: #FFF;
+    float: left; 
+    width: 30px;
+    height: 30px;
+}
+.circle {
+    position: relative;
+    width: 21px;
+    height: 21px;
+    transform: rotate(-90deg);
+    /* چرخش دایره برای شروع از بالا */
+}
+
+.circleBorder {
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 10;
+    stroke-dasharray: 283;
+    stroke-dashoffset: 283;
+    animation: drawCircle 10s linear infinite;
+}
+
+.centerPoint {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 92px;
+    height: 92px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    z-index: 9;
+}
+
+@keyframes drawCircle {
+    0% {
+        stroke-dashoffset: 283;
+        /* شروع از بالا */
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        /* تکمیل دایره */
+    }
+}
+/*----------------------------------------------------------------------------------*/
+.main-page-header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    height: 35vh;
+    flex-direction: column;
+    top: 0;
+    z-index: 4;
+}
+
+.main-page-header-logo {
+    position: relative;
+    width: 15%;
+    margin-top: 2.8%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-page-header-menu {
+    float: left;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.7%;
+    color: var(--Text-Greyscale-600, #FFFFFF);
+    font-family: Urbanist;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.main-page-header-menu-item {
+    border-right: 1px solid rgba(128, 128, 128, 0.263);
+    padding: 0px 10%;
+    cursor: pointer;
+    transition: all 0.5s;
+    animation-iteration-count: 1;
+    height: 18px;
+}
+
+.main-page-header-menu-item:last-child {
+    border-right: 0px solid rgba(128, 128, 128, 0.263);
+}
+
+.main-page-header-menu-item:hover {
+    color: var(--Text-General-Text-Light, #757575);
+}
+
+.main-page-header-menu-item:active {
+    color: var(--Text-General-Text-Light, #757575);
+    animation: fading1 0.5s
+}
+
+@keyframes fading1 {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+

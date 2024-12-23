@@ -1,0 +1,169 @@
+ .contacUs {
+    padding-left: 20%;
+    padding-right: 20%;
+    /* margin-top: 3%; */
+    /* position: relative; */
+    /* float: left; */
+    margin-bottom: 7%;
+ }
+
+ .contacUs>input::-webkit-input-placeholder,
+ textarea::-webkit-input-placeholder {
+     color: #BDBDBD;
+ }
+
+ .contacUs-input {
+     overflow: hidden;
+     color: #757575;
+     text-overflow: ellipsis;
+     /* Urbanist/H6/regular */
+     font-family: Urbanist;
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 160%;
+     /* 28.8px */
+     outline: 0px;
+     border: 0px;
+     border-bottom: 1px #9e9e9ea0 solid;
+     background-color: transparent;
+     width: 100%;
+     height: 40px;
+     margin-top: 3%;
+ }
+
+
+ .contacUs-upload-title {
+     color: var(--Text-Greyscale-600, #757575);
+     /* Urbanist/H6/regular */
+     font-family: Urbanist;
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 160%;
+     /* 28.8px */
+     margin-top: 3%;
+ }
+
+ .contacUs-upload {
+     margin-top: 2%;
+     float: left;
+     position: relative;
+     width: 70%;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     font-family: Urbanist;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 160%;
+     /* 25.6px */
+     letter-spacing: 0.2px;
+ }
+
+ .contacUs-upload>input[type=file] {
+     padding: 15px 15px;
+     padding-left: calc(160px + 20%);
+     color: #212121;
+     font-family: Urbanist;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 400;
+ }
+
+ .contacUs-upload>input[type=file]::file-selector-button {
+     background-color: #fff;
+     color: #212121;
+     width: 152px;
+     border: 0px;
+     border-right: 1px solid #e5e5e5;
+     padding: 15px 15px;
+     background: var(--Surface-Transparent-Transparent-Grey, rgba(117, 117, 117, 0.08));
+     top: 0;
+     /* Urbanist/Medium/bold */
+     font-family: Urbanist;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 160%;
+     cursor: pointer;
+     float: left;
+     position: absolute;
+     left: 0;
+     border-radius: 2px;
+ }
+
+ .contacUs-upload>input[type=file]::file-selector-button:hover {
+     background-color: #eee;
+     border: 0px;
+ }
+
+ .contacUs-upload-warrning {
+     right: 0;
+     margin-top: auto;
+     margin-bottom: auto;
+     color: var(--Text-Greyscale-900, #212121);
+     font-family: Urbanist;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 400;
+ }
+
+ .contacUs-send-button {
+     position: relative;
+     float: left;
+     width: 98%;
+     background-color: black;
+     margin-top: 7%;
+     padding: 15px;
+     text-align: center;
+     color: #fff;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 700;
+     cursor: pointer;
+     transition: all 0.5s;
+     border-radius: 2px;
+     left: -0.5%;
+ }
+
+ .contacUs-send-button:hover {
+     background-color: rgb(37, 37, 37);
+ }
+
+ .contacUs-send-button:active {
+     background-color: rgb(135, 135, 135);
+     color: black;
+ }
+
+ /*-----------------------------------------------------------------------*/
+ @media only screen and (max-width: 600px) {
+ 
+     .contacUs {
+        padding-left: 4%;
+        padding-right: 4%;
+        margin-top: 0px; 
+        position: relative;
+        float:none;
+        padding-bottom: 0px;
+        overflow-x: hidden;
+     }
+     .contacUs-upload-warrning{
+        display: none;
+     }
+     .contacUs-send-button{
+        padding: 13px 0px;
+        margin-top: 15% 0px;
+     }
+
+     .contacUs-upload{
+        width: 100% !important;
+     }
+     .contacUs-input {
+        margin-top: 5%;
+    }
+    .contacUs-upload-title{
+        margin-top: 8%;
+    }
+ }
